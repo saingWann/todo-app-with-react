@@ -1,5 +1,5 @@
 import React from 'react'
-import './list.css'
+import '../style/list.css'
 
 const List = ({todo , deleteTodo ,edit,setEdit,HandleComplete,setTaskToEdit}) => {
 
@@ -13,13 +13,12 @@ const List = ({todo , deleteTodo ,edit,setEdit,HandleComplete,setTaskToEdit}) =>
     const handleEdit = (task) => {
         setEdit(!edit)
         setTaskToEdit(task)
-        console.log(task);
     }
   return (
-    <div>
-        <ul>
+    <div className='container'>
+        <ul className='wrapper'>
             {todo.map((task) => (
-                <li key={task.id}>
+                <li className={`${task.complete? "complete" : ""}`} key={task.id}>
                     <input checked={task.complete} onChange={() =>HandleComplete(task.id,task.complete) } type="checkbox" />
                     <p className={`${task.complete? "title" : ""}`}>{task.title}</p>
                     <button onClick={()=> handleEdit(task)}>edit</button>

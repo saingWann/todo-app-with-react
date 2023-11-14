@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./form.css";
+import '../style/form.css';
 
 const Form = ({ addNewTodo, edit,setEdit,setTaskToEdit,taskToEdit,updateTodoName }) => {
   const [todoName, setTodoName] = useState("");
@@ -10,8 +10,8 @@ const Form = ({ addNewTodo, edit,setEdit,setTaskToEdit,taskToEdit,updateTodoName
 
   const udpateData = (e) => {
     e.preventDefault();
-    console.log(taskToEdit);
-    console.log("update");
+    // console.log(taskToEdit);
+    // console.log("update");
     setEdit(!edit)
     setTaskToEdit({})
   }

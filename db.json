@@ -1,11 +1,6 @@
 {
   "todoList": [
     {
-      "id": "2ab573e6-6efa-46dd-adfb-b24a4faf463a",
-      "title": "htet san kyi tar",
-      "complete": true
-    },
-    {
       "id": "a8dd4710-6f13-47ee-a29d-ed9c88f5ae96",
       "title": "hello world",
       "complete": true

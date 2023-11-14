@@ -1,3 +1,12 @@
+
+.container{
+ display: flex;
+ justify-content: center;
+ padding-top: 2rem;
+}
+.wrapper{
+    width: 70%;
+}
 li{
   display: flex;  
   justify-content: space-evenly;
@@ -8,6 +17,10 @@ li{
   border-radius: 3rem;
   margin-bottom: 1rem;
 
+}
+
+.complete {
+    background-color: rgba(220, 220, 220, 0.281);
 }
 li p{
     width: 50%;

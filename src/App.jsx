@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { api } from "./api";
-import Form from "./Form";
-import List from "./List";
+import Form from "./components/Form";
+import List from "./components/List";
 import { v4 as uuidv4 } from 'uuid';
 
 const App = () => {
@@ -78,7 +78,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>todo app</h1>
       <Form {...formProps} />
       <List {...listProps}/>
     </div>
